@@ -1,0 +1,28 @@
+// navbar.scss
+
+.navbar {
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+
+  .nav-options {
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 15px;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #ffd700; // Change color on hover
+      }
+    }
+  }
+}

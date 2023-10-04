@@ -1,0 +1,53 @@
+// Form.scss
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+  
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333;
+    }
+  
+    .form-group {
+      margin-bottom: 20px;
+  
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+  
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+  
+      textarea {
+        height: 150px; // Set a specific height for the textarea
+      }
+    }
+  
+    button {
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #2980b9;
+      }
+    }
+  }
+  
