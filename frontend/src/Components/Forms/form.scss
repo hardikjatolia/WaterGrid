@@ -1,53 +1,52 @@
-// Form.scss
-
 .form-container {
-    max-width: 400px;
-    margin: 0 auto;
-  
-    h2 {
-      font-size: 24px;
-      margin-bottom: 20px;
-      text-align: center;
-      color: #333;
-    }
-  
-    .form-group {
-      margin-bottom: 20px;
-  
-      label {
-        display: block;
-        margin-bottom: 5px;
-        font-weight: bold;
-      }
-  
-      input[type="text"],
-      input[type="email"],
-      textarea {
-        width: 100%;
-        padding: 10px;
-        font-size: 16px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-      }
-  
-      textarea {
-        height: 150px; // Set a specific height for the textarea
-      }
-    }
-  
-    button {
-      background-color: #3498db;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-  
-      &:hover {
-        background-color: #2980b9;
-      }
-    }
-  }
-  
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff8e6; /* Yellowish-white background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  border-radius: 10px; /* Rounded corners */
+  text-align: center;
+  margin-top: 20px; /* Add margin to the top to create space between form and navbar */
+  color: #000; /* Set font color to black */
+}
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+.form-container {
+  /* ... existing styles ... */
+  margin-top: 20px; /* Add margin to the top to create space between form and navbar */
+}

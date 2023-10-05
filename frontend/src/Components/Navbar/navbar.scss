@@ -1,28 +1,45 @@
-// navbar.scss
+// Define primary colors
+$primary-color: #ffffcc; // Yellowish-white
+$accent-color: #ffc107; // Yellow
 
+// Navbar styles
 .navbar {
-  background-color: #3498db;
-  color: #ffffff;
+  background-color: $primary-color;
+  color: #333; // Change text color to a darker shade for better readability
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Lighten the box shadow
 
-  h1 {
-    margin: 0;
-    font-size: 24px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+// Navigation options styles
+.nav-options {
+  display: flex;
+  gap: 20px;
+  transition: margin-top 0.3s ease-in-out;
+
+  @media (max-width: 768px) {
+    margin-top: 10px;
   }
 
-  .nav-options {
-    a {
-      color: #ffffff;
-      text-decoration: none;
-      margin: 0 15px;
-      transition: color 0.3s ease;
+  a {
+    color: #333; // Change link color to a darker shade for better readability
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
 
-      &:hover {
-        color: #ffd700; // Change color on hover
-      }
+    &:hover {
+      color: $accent-color;
+    }
+
+    &.active {
+      color: $accent-color;
+      font-weight: bold;
     }
   }
 }
