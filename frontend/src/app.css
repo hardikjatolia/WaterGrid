@@ -18,7 +18,7 @@ li {
 
 /* Body styles with dark royal matte finish navy blue background */
 body {
-  background: url(D:\DC prototype\frontend\public\pexels-engin-akyurt-1435752.jpg) center/cover no-repeat fixed; 
+  background: url(pexels-engin-akyurt-1435752.jpg) center/cover no-repeat fixed; 
   background-color: rgba(10, 25, 47, 0.8); 
   color: #fff;
 }
