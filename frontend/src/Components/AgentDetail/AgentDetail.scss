@@ -1,0 +1,35 @@
+/* AgentDetail.scss */
+
+.agent-detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .agent-info-card {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    margin: 20px auto;
+  }
+  
+  .agent-info-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .agent-info-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* You can add more styles as needed to make it look beautiful. */
+  

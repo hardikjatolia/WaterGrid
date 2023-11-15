@@ -1,5 +1,5 @@
 .form-container {
-  width: 300px;
+  width: 500px;
   margin: 0 auto;
   padding: 20px;
   background-color: #fff8e6; /* Yellowish-white background */
@@ -49,4 +49,5 @@ button[type="submit"]:hover {
 .form-container {
   /* ... existing styles ... */
   margin-top: 20px; /* Add margin to the top to create space between form and navbar */
+  margin-bottom: 20px;
 }

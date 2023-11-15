@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       
-      <h1>Water Grid Management</h1>
+      <Link to="/"><h1>Water Grid Management</h1></Link>
       <div className="nav-options">
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>

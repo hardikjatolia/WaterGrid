@@ -15,11 +15,11 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   background-color: #fff8e6;
-  transition: all 0.3s ease-in-out; /* Apply transition to all properties */
+  transition: all 0.3s ease-in-out;
 
   &:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px); /* Move the card up slightly on hover */
+    transform: translateY(-5px);
   }
 
   h2 {
@@ -32,7 +32,7 @@
     font-size: 1rem;
     color: #666;
   }
-  
+
   @media (max-width: 768px) {
     width: calc(50% - 40px);
   }
@@ -40,4 +40,8 @@
   @media (max-width: 480px) {
     width: calc(100% - 40px);
   }
+}
+
+.active {
+  cursor: pointer; /* Change the cursor to a pointer when active */
 }

@@ -1,11 +1,11 @@
 // Define primary colors
-$primary-color: #ffffcc; // Yellowish-white
-$accent-color: #ffc107; // Yellow
+$primary-color: #797900; // Yellowish-white
+$accent-color: #ffffff; // Yellow
 
 // Navbar styles
 .navbar {
   background-color: $primary-color;
-  color: #333; // Change text color to a darker shade for better readability
+  color: #000000; // Change text color to a darker shade for better readability
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -29,17 +29,22 @@ $accent-color: #ffc107; // Yellow
   }
 
   a {
-    color: #333; // Change link color to a darker shade for better readability
-    text-decoration: none;
+    color: #000000; // Change link color to a darker shade for better readability
     transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
 
     &:hover {
       color: $accent-color;
+      text-decoration: underline;
     }
 
-    &.active {
+    &:active {
       color: $accent-color;
       font-weight: bold;
     }
   }
+}
+
+h1:hover{
+  color: #ffffff;
+  transition: color 0.3s;
 }
