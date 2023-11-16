@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,600;1,700&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,600;1,700&family=Nunito:wght@200&display=swap');
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Jost', sans-serif;
+  font-family: 'Nunito', sans-serif;;
 }
 
 /* Remove text decoration for all anchor elements */
