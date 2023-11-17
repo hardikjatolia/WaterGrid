@@ -30,7 +30,7 @@ const AgentDetail = () => {
       ) : agent ? (
         <div className="agent-info-card">
           <h2>Agent {agent.agent_id}</h2>
-          <p>Click to view information about the agent</p>
+          <p>Information about the agent</p>
           <p>Paragraph 1: {agent.paragraph1}</p>
           <p>Paragraph 2: {agent.paragraph2}</p>
           <p>Paragraph 3: {agent.paragraph3}</p>
