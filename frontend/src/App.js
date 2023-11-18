@@ -1,6 +1,8 @@
 import React from 'react';
 import './app.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import Routes component
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import Navbar from './Components/Navbar/Navbar';
 import Form from './Components/Forms/Form';
@@ -13,6 +15,7 @@ const App = () => {
     <Router>
       <div>
         <Navbar />
+        <ToastContainer />
         <Routes>
           <Route path="/FormInput" element={<FormInput />} />
           <Route path="/forms" element={<Form />} />

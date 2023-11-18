@@ -52,12 +52,15 @@ app.get("/agents/:id", async (req, res) => {
 // Update an agent by ID
 app.put("/agents/:id", async (req, res) => {
   try {
-    const { id } = req.params;
+    const { agentId } = req.params;
     const { paragraph1, paragraph2, paragraph3, paragraph4 } = req.body;
+
+    // Check if values are defined before updating
     const updatedAgent = await pool.query(
-      "UPDATE agents SET paragraph1 = $1, paragraph2 = $2, paragraph3 = $3, paragraph4 = $4 WHERE agent_id = $5 RETURNING *",
-      [paragraph1, paragraph2, paragraph3, paragraph4, id]
+      "UPDATE agents SET paragraph1 = COALESCE($1, paragraph1), paragraph2 = COALESCE($2, paragraph2), paragraph3 = COALESCE($3, paragraph3), paragraph4 = COALESCE($4, paragraph4) WHERE agent_id = $5 RETURNING *",
+      [paragraph1, paragraph2, paragraph3, paragraph4, agentId]
     );
+    
     res.json(updatedAgent.rows[0]);
   } catch (err) {
     console.error(err);

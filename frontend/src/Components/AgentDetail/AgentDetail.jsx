@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import './AgentDetail.scss'; // Import your stylesheet
 
 const AgentDetail = () => {
   const { agentId } = useParams(); // Get the agentId from the URL
+  const navigate = useNavigate();
 
   const [agent, setAgent] = useState(null);
   const [loading, setLoading] = useState(true);

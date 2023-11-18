@@ -1,10 +1,15 @@
 // FormInput.jsx
 
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import './FormInput.scss'; // Import your CSS file
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import './FormInput.scss';
 
 const FormInput = () => {
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     paragraph1: '',
     paragraph2: '',
@@ -32,6 +37,15 @@ const FormInput = () => {
         paragraph3: '',
         paragraph4: '',
       });
+
+      // Show success notification
+      toast.success('Agent added successfully!', {
+        position: toast.POSITION.BOTTOM_RIGHT,
+        style: { fontSize: '16px' }, // Adjust the font size here
+      });
+
+      navigate('/');
+
     } catch (error) {
       console.error('Error adding agent:', error);
     }
@@ -81,6 +95,7 @@ const FormInput = () => {
           Submit here
         </button>
       </form>
+      <ToastContainer />
     </div>
   );
 };
